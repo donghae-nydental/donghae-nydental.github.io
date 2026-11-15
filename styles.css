@@ -1013,6 +1013,120 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-5.5px) rota
   .site-footer { padding: 44px 0 36px; }
 }
 
+/* Price Banner (Hero ↔ Intro) */
+.price-banner {
+  background: var(--navy);
+  color: var(--ivory);
+  border-top: 1px solid rgba(248, 245, 238, 0.12);
+  border-bottom: 1px solid rgba(248, 245, 238, 0.12);
+  padding: 28px 0;
+}
+
+.price-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.price-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.floor-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 54px;
+  padding: 0 12px;
+  border-radius: 10px;
+  background: var(--ivory);
+  color: var(--navy);
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.price-banner-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ivory);
+}
+
+.price-banner-note {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  color: rgba(248, 245, 238, 0.72);
+  line-height: 1.5;
+}
+
+.price-banner-right {
+  flex-shrink: 0;
+}
+
+.price-banner-amount {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 12px 22px;
+  border: 1px solid rgba(232, 197, 107, 0.35);
+  border-radius: 6px;
+  background: rgba(21, 36, 43, 0.55);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.price-banner-amount:hover {
+  border-color: rgba(232, 197, 107, 0.75);
+  background: rgba(21, 36, 43, 0.85);
+}
+
+.price-banner-amount strong {
+  font-family: var(--serif);
+  font-size: clamp(32px, 3.6vw, 44px);
+  font-weight: 600;
+  line-height: 1;
+  color: #edd078;
+  letter-spacing: -0.03em;
+}
+
+.price-banner-amount strong span {
+  font-size: 0.52em;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.price-banner-link {
+  font-size: 13px;
+  color: rgba(248, 245, 238, 0.85);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .price-banner { padding: 24px 0; }
+  .price-banner-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+  .price-banner-left { gap: 14px; }
+  .floor-badge { min-width: 46px; height: 46px; font-size: 17px; }
+  .price-banner-amount {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 18px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; animation: none !important; }
