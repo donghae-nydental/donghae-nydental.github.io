@@ -599,6 +599,13 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-5.5px) rota
   font-size: 16px;
   white-space: nowrap;
 }
+.fee-table td.country {
+  width: 1%;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--ink-light);
+  white-space: nowrap;
+}
 .fee-table td.price {
   font-family: var(--serif);
   font-size: 26px;
@@ -980,6 +987,14 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-5.5px) rota
     font-size: 16px;
     padding: 0 0 6px;
     border: 0;
+  }
+  .fee-table td.country {
+    width: auto;
+    padding: 0 0 4px;
+    border: 0;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--ink-light);
   }
   .fee-table td.price {
     font-size: 24px;
